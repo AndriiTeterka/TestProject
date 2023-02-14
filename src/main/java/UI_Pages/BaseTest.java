@@ -9,9 +9,10 @@ import org.testng.annotations.BeforeTest;
 public class BaseTest {
 
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
+        /*WebDriverManager.chromedriver().setup();
         Configuration.browser = "chrome";
-        Configuration.driverManagerEnabled = true;
+        Configuration.driverManagerEnabled = true;*/
+        Configuration.headless = true;
     }
 
     @BeforeTest
