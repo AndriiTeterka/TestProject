@@ -1,5 +1,7 @@
-package API;
+package API_Tests;
 
+import API_Pages.Specifications;
+import API_Pages.UserData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

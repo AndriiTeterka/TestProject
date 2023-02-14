@@ -1,4 +1,4 @@
-package API;
+package API_Pages;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;

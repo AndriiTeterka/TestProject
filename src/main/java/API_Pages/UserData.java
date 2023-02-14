@@ -1,4 +1,4 @@
-package API;
+package API_Pages;
 
 public class UserData {
     private Integer id;

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/andrii.teterka/IdeaProjects/TestProject">
+    <test name="TestProject">
         <classes>
-            <class name="API.apiTest">
-                <methods>
-                    <include name="testUsers"/>
-                </methods>
-            </class>
+            <class name="API_Tests.apiTest"/>
+            <class name="UI_Tests.uiTests"/>
         </classes>
     </test>
 </suite>
