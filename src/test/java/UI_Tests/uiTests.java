@@ -35,7 +35,7 @@ public class uiTests extends BaseTest {
     @Description("6-2 test")
     @Test
     public void calcMinusTest() {
-        assertAnswer("6-2");
+        Assert.assertTrue(false);
     }
 
     @Description("2*2 test")
