@@ -31,13 +31,8 @@ public class BaseTest {
 
     @AfterTest
     public void shutDown() throws IOException {
-        screenshot();
         Selenide.closeWebDriver();
     }
 
-    @Attachment(type = "image/png")
-    public byte[] screenshot() throws IOException {
-        File screenshot = Screenshots.getLastScreenshot();
-        return screenshot == null ? null : Files.toByteArray(screenshot);
-    }
+
 }
