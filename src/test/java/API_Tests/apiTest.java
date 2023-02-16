@@ -2,6 +2,7 @@ package API_Tests;
 
 import API_Pages.Specifications;
 import API_Pages.UserData;
+import io.qameta.allure.Description;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,6 +14,7 @@ public class apiTest {
 
     private final static String URL = "https://reqres.in/api/users?page=2";
 
+    @Description("Filtering users")
     @Test
     public void testUsers() {
         Specifications.specInstall(Specifications.requestSpecification(), Specifications.responseSpecification());
