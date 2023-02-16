@@ -1,19 +1,18 @@
 package UI_Pages;
 
+import Utils.TestListener;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import com.codeborne.selenide.Screenshots;
-import com.google.common.io.Files;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.qameta.allure.Attachment;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 
-import java.io.File;
 import java.io.IOException;
 
+@Listeners(TestListener.class)
 public class BaseTest {
 
     public void setUp() {
