@@ -1,6 +1,7 @@
 package UI_Tests;
 
 import UI_Pages.BaseTest;
+import Utils.TestListener;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
@@ -12,6 +13,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class uiTests extends BaseTest {
 
+
     @Step("Search value on google")
     private void assertAnswer(String value) {
         Selenide.open("https://www.google.com/");
@@ -19,6 +21,7 @@ public class uiTests extends BaseTest {
         String answer = $x("//span[@id='cwos']").getText();
         Assert.assertEquals("4", answer);
     }
+
 
     @Description("2+2 test")
     @Test
