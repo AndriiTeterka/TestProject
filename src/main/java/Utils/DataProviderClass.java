@@ -4,10 +4,10 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviderClass {
 
-    @DataProvider(name = "testData")
-    public static Object[][] provideTestData() {
+    @DataProvider(name = "checkoutUser")
+    public static Object[][] checkoutUser() {
         return new Object[][]{
-                {"student", "Password123", "Logged In Successfully"},
+                {"TestName", "TestUserName", "79000"},
         };
     }
 }

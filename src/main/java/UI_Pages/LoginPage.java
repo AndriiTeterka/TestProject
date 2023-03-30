@@ -6,18 +6,16 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
 
+    @FindBy(id = "user-name")
+    WebElement usernameInput;
+    @FindBy(id = "password")
+    WebElement passwordInput;
+    @FindBy(xpath = "//input[@id='login-button']")
+    WebElement submitButton;
+
     public LoginPage(WebDriver driver) {
         super(driver);
     }
-
-    @FindBy(xpath = "//input[@id='username']")
-    WebElement usernameInput;
-
-    @FindBy(id = "password")
-    WebElement passwordInput;
-
-    @FindBy(xpath = "//button[@id='submit']")
-    WebElement submitButton;
 
     public void enterUsername(String username) {
         usernameInput.click();
